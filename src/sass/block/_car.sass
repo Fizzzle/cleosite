@@ -1,0 +1,72 @@
+.car
+    padding-top: 85px
+    background: url('/img/car-bg.jpg')
+    &__title
+        margin-bottom: 42px
+    &__wrapper
+        display: grid
+        grid-template-columns: 617px 500px
+        column-gap: 120px
+    &__photo
+        position: relative
+        &:after
+            content: ''
+            position: absolute
+            background-image: url('/img/car/lightLeft.png')
+            width: 53px
+            height: 67px
+            left: 330px
+            top: 150px
+            z-index: 2
+            animation: carlight .5s linear infinite alternate
+        &::before
+            content: ''
+            position: absolute
+            background-image: url('/img/car/lightright.png')
+            width: 53px
+            height: 67px
+            left: 546px
+            top: 150px
+            z-index: 2
+            animation: carlight .5s linear infinite alternate
+        &-earth
+            position: absolute
+            left: -20px
+            z-index: 0
+        &-audi
+            position: absolute
+            z-index: 1
+    &__dowland
+        margin-right: 28px
+        img
+            margin-bottom: 100px
+
+    &__list
+        margin-top: 75px
+        padding-left: 52px
+        list-style-type: none
+        margin-bottom: 44px
+    &__item
+        position: relative
+        font-weight: 500
+        font-size: 16px
+        line-height: 19px
+        color: #fff
+        margin-bottom: 30px
+
+        &::before
+            content: ''
+            position: absolute
+            left: -42px
+            top: 50%
+            transform: translateY(-50%)
+            width: 19px
+            height: 19px
+            border-radius: 100%
+            background-color: #00BF63
+
+@keyframes carlight
+    0%
+        opacity: 0
+    100%
+        opacity: 1

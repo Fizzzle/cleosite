@@ -1,0 +1,65 @@
+.about
+    padding: 45px 0 116px 0
+    background: url('/img/about-bg.jpg') no-repeat center center/cover
+    &__wrapper
+        display: grid
+        grid-template-columns: 507px 580px
+        grid-auto-columns: minmax(507px, 580px)
+        column-gap: 96px
+        row-gap: 125px
+    &__title
+        text-align: left
+        margin-top: 205px
+        margin-bottom: 23px
+        &-left
+            text-align: left
+            margin-bottom: 20px
+    &__subtitle
+        text-align: left
+        margin-bottom: 20px
+    &__descr
+        max-width: 450px
+        color: #3b3b3bfb
+        font-size: 16px
+        line-height: 19px
+        font-weight: 500
+    &__list
+        padding-left: 42px
+        list-style-type: none
+        margin-bottom: 45px
+    &__item
+        position: relative
+        margin-bottom: 24px
+        font-size: 16px
+        line-height: 20px
+        color: #333333
+        &::before
+            content: ''
+            position: absolute
+            left: -42px
+            top: 40%
+            transform: translateY(-50%)
+            width: 19px
+            height: 19px
+            border-radius: 100%
+            background-color: #00BF63
+    &__btn
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, 0.3)
+        border-radius: 20px
+        border: 2px solid #fff
+        padding: 15px 23px
+        font-size: 16px
+        line-height: 25px
+    &__photo-macbook
+        position: relative
+        img
+            width: 100%
+        &::after
+            content: ''
+            position: absolute
+            width: 455px
+            height: 293px
+            top: 20px
+            left: 66px
+            background: url('/img/about/map.jpg')
+            border-radius: 5px
