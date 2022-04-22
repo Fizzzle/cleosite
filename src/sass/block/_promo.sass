@@ -1,4 +1,4 @@
-nav
+.nav
     display: flex
     position: fixed
     width: 100%
@@ -19,10 +19,12 @@ nav
         margin: 0
         width: 540px
         justify-content: space-between
-    &__item
+    &__link
         color: #fff
         &:hover
             color: #fff
+    &__close
+        display: none
 
 .promo
     position: relative
@@ -45,3 +47,6 @@ nav
         background-color: #fff
         &:hover
             color: #000
+
+.hamburger
+    display: none

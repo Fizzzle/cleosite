@@ -1,6 +1,6 @@
-footer
+.footer
     background-color: #1e1e1e
-    height: 237px
+    min-height: 237px
     padding-top: 46px
 
 .footer
@@ -14,13 +14,16 @@ footer
 
     &__menu
         display: flex
+        width: 100%
         justify-content: space-between
+        justify-self: start
         list-style-type: none
         &-link
             color: #fff
             &:hover
                 color: #fff
                 text-decoration: none
+
     &__block
         display: flex
         align-items: center

@@ -1,0 +1,458 @@
+@media (max-width: 1200px)
+    .container
+        max-width: 960px
+    .menu
+        &__list
+            margin-left: 10px
+            width: 480px
+    .btn
+        margin-left: 15px
+        padding: 16px 22px
+    .promo
+        padding-top: 260px
+    .title
+        font-size: 18px
+        &_fz45
+            font-size: 40px
+
+    .about
+        &__wrapper
+            grid-template-columns: 430px 500px
+            column-gap: 30px
+    .advantage
+        &__title
+            font-size: 40px
+        &__wrapper
+            width: 910px
+            grid-template-columns: repeat(3, 200px)
+
+    .reviews
+        padding: 50px 0
+    .swiper
+        width: 100%
+
+    .car
+        padding-top: 50px
+        &__wrapper
+            grid-template-columns: 410px 500px
+            column-gap: 50px
+        &__list
+            margin-top: 30px
+        &__photo
+            &::before
+                left: 365px
+                top: 96px
+            &::after
+                left: 220px
+                top: 96px
+            img
+                &:nth-of-type(1)
+                    width: 50%
+                &:nth-of-type(2)
+                    width: 100%
+    .leed
+        &__wrapper
+            grid-template-columns: 440px 260px
+            grid-template-columns: 550px 350px
+            column-gap: 30px
+        &__title
+            padding-left: 25px
+            text-align: left
+        &__form
+            padding-top: 30px
+        &__btn
+            margin-left: 0
+
+@media (max-width: 992px)
+    .container
+        max-width: 720px
+    .menu
+        &__logo
+            width: 90%
+        &__list
+            margin-left: 0px
+            width: 400px
+        &__item
+            margin-left: 5px
+            font-size: 14px
+    .btn
+        width: 210px
+        margin-left: 5px
+        font-size: 16px
+        padding: 16px 22px
+    .promo
+        padding-top: 240px
+    .title
+        font-size: 17px
+        &_fz45
+            font-size: 38px
+    .about
+        padding: 45px 0
+        &__wrapper
+            grid-template-columns: repeat(2, 1fr)
+        &__title
+            margin-top: 20px
+            margin-bottom: 15px
+            text-align: center
+        &__subtitle
+            text-align: center
+        &__descr
+            max-width: unset
+            text-align: center
+        &__photo-macbook
+            margin-top: 40px
+    .advantage
+        &__title
+            font-size: 38px
+        &__wrapper
+            padding: 40px
+            width: 680px
+            grid-template-columns: repeat(2, 1fr)
+            grid-auto-columns: 1fr
+            column-gap: 60px
+
+    .reviews
+        &__photo
+            margin-top: 30px
+            width: 100%
+    .swiper
+        &-slide
+            grid-template-columns: 250px 355px
+            column-gap: 40px
+            padding: 67px
+        &-button
+            &-next
+                bottom: 110px
+                left: 210px
+            &-prev
+                bottom: 110px
+                left: 140px
+    .car
+        &__wrapper
+            grid-template-columns: 320px 390px
+            column-gap: 20px
+        &__photo
+            &::after
+                left: 168px
+                top: 70px
+            &::before
+                left: 280px
+                top: 70px
+        &__dowland
+            img
+                width: 40%
+                margin-bottom: 20px
+    .leed
+        &__wrapper
+            grid-template-columns: 440px 260px
+            column-gap: 20px
+        &__title
+            padding-left: 15px
+            text-align: left
+        &__form
+            padding-top: 60px
+        &__btn
+            margin-left: 0
+            width: 260px
+    .contacts
+        padding: 30px 0
+        &__wrapper
+            align-items: center
+            &:nth-of-type(2)
+                margin-top: 30px
+
+    .footer
+        padding-top: 20px
+        height: 237px
+        &__wrapper
+            grid-template-columns: 350px 370px
+@media (max-width: 768px)
+    .container
+        max-width: 530px
+    .nav
+        right: 150%
+        width: 100%
+        height: 100vh
+        flex-direction: column
+        justify-content: space-between
+        background-color: #000000f3
+        transition: all .6s
+        &.active
+            right: 0%
+    .menu
+        padding: 40px
+        height: 100vh
+        flex-direction: column
+        text-align: left
+        &__list
+            text-align: center
+            flex-direction: column
+        &__item
+            margin-bottom: 25px
+            font-size: 18px
+        &__link
+            position: relative
+            &::after
+                position: absolute
+                transition: all .3s
+                content: ''
+                top: 20px
+                left: 0
+                height: 1px
+                width: 0%
+                background-color: #fff
+            &:hover
+                &::after
+                    width: 100%
+        &__close
+            position: absolute
+            right: 30px
+            top: 2px
+            display: block
+            font-size: 40px
+            color: #fff
+            cursor: pointer
+            transition: transform .6s
+            &:hover
+                transform: rotate(90deg)
+    .btn
+        text-align: center
+        margin-left: 5px
+        font-size: 16px
+        width: 180px
+        padding: 12px 18px
+    .hamburger
+        display: block
+        position: fixed
+        right: 20px
+        top: 20px
+        height: 20px
+        width: 50px
+        cursor: pointer
+        z-index: 1
+        &__item
+            display: block
+            width: 100%
+            height: 3px
+            margin-bottom: 5px
+            background-color: #fff
+    .promo
+        padding-top: 200px
+    .title
+        font-size: 16px
+        &_fz45
+            font-size: 35px
+            line-height: 44px
+    .about
+        padding: 45px 0
+        &__wrapper
+            grid-template-columns: 1fr
+            row-gap: 40px
+        &__title
+            margin-top: 20px
+            margin-bottom: 15px
+            text-align: center
+            &-left
+                text-align: center
+        &__subtitle
+            text-align: center
+        &__descr
+            max-width: unset
+            text-align: center
+        &__btns
+            text-align: center
+            margin-bottom: 20px
+    .advantage
+        padding: 50px 0
+        &__title
+            font-size: 35px
+        &__wrapper
+            width: 100%
+            grid-template-columns: repeat(2, 1fr)
+            grid-auto-columns: 1fr
+            column-gap: 60px
+        &__text
+            font-size: 14px
+    .reviews
+        padding: 30px
+        &__title
+            margin-bottom: 35px
+        &__photo
+            object-fit: cover
+            height: 100%
+        &__descr
+            text-align: center
+        &__name
+            text-align: center
+        &__subname
+            text-align: center
+    .swiper
+        width: 100%
+        &-slide
+            grid-template-columns: 1fr
+            row-gap: 20px
+            padding: 40px
+        &-button
+            &-next
+                display: none
+                bottom: 20%
+                left: 210px
+            &-prev
+                display: none
+                bottom: 110px
+                left: 140px
+    .car
+        &__wrapper
+            grid-template-columns: 1fr
+            row-gap: 300px
+        &__photo
+            height: 100px
+            &::after
+                left: 290px
+                top: 125px
+            &::before
+                left: 480px
+                top: 130px
+        &__dowland
+            img
+                width: 40%
+                margin-bottom: 20px
+
+    .leed
+        padding: 60px 0
+        &__wrapper
+            grid-template-columns: 1fr
+        &__title
+            text-align: center
+        &__form
+            padding-top: 60px
+        &__btn
+            display: block
+            margin: auto
+            width: 260px
+    .map
+        padding-top: 60px
+
+    .contacts
+        padding: 20px 0
+        img
+            align-self: center
+        &__wrapper
+            flex-direction: column
+            text-align: center
+            &:nth-of-type(2)
+                align-items: center
+                margin-top: 50px
+        &__item
+            margin-bottom: 30px
+    .footer
+        padding: 30px 0
+        height: 100%
+        &__wrapper
+            grid-template-columns: 1fr
+            justify-content: center
+            img
+                justify-self: center
+        &__menu
+            margin-top: 20px
+            flex-direction: column
+            justify-self: center
+            &-item
+                margin-bottom: 20px
+                text-align: center
+            &-link
+                font-size: 18px
+        &__block
+            justify-content: center
+        &__link
+            margin-right: 0
+@media (max-width:576px)
+    .container
+        max-width: 100%
+        padding: 0 15px
+    .menu
+        width: 280px
+        margin: 0 auto
+        padding: 35px 0
+        &__list
+            width: 200px
+    .promo
+        padding-top: 140px
+        &__btns
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__btn
+            margin-right: 0
+            margin-bottom: 10px
+
+    .title
+        // width: 280px
+        text-align: center
+        &_fz45
+            font-size: 30px
+    .btn
+        width: 180px
+        padding: 10px 18px
+        font-size: 12px
+
+    .about
+        img
+            width: 100%
+    .advantage
+        padding: 20px 0
+        &__title
+            font-size: 25px
+        &__wrapper
+            padding: 30px 10px
+            column-gap: 20px
+            row-gap: 30px
+        &__text
+            font-size: 14px
+    .reviews
+        &__photo
+            margin-top: 0
+        &__descr
+            margin-top: 10px
+            font-size: 14px
+            line-height: 18px
+        &__name
+            font-size: 15px
+        &__subname
+            font-size: 12px
+
+    .swiper
+        &-slide
+            grid-template-columns: 1fr
+            row-gap: 10px
+            padding: 20px
+    .car
+        &__wrapper
+            row-gap: 160px
+        &__photo
+            &::after
+                left: 140px
+                top: 58px
+            &::before
+                left: 235px
+                top: 60px
+        &__dowland
+            margin-right: 20px
+    .leed
+        &__title
+            line-height: 36px
+        &__form
+            padding-top: 30px
+            display: flex
+            flex-direction: column
+            justify-content: center
+            input
+                width: 250px
+        &__btn
+            width: 250px
+    .map
+        padding-top: 40px
+
+    .contacts
+        &__descr
+            width: unset

@@ -3,9 +3,9 @@
     background: url('/img/about-bg.jpg') no-repeat center center/cover
     &__wrapper
         display: grid
-        grid-template-columns: 507px 580px
-        grid-auto-columns: minmax(507px, 580px)
-        column-gap: 96px
+        grid-template-columns: 480px 580px
+        grid-auto-columns: minmax(480px, 580px)
+        column-gap: 80px
         row-gap: 125px
     &__title
         text-align: left
@@ -54,12 +54,5 @@
         position: relative
         img
             width: 100%
-        &::after
-            content: ''
-            position: absolute
-            width: 455px
-            height: 293px
-            top: 20px
-            left: 66px
-            background: url('/img/about/map.jpg')
-            border-radius: 5px
+    img
+        width: 100%
