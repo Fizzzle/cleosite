@@ -15,13 +15,21 @@ const swiper = new Swiper('.swiper', {
 });
 
 const hamburger = document.querySelector('.hamburger'),
-    menu = document.querySelector('.nav'),
+  menu = document.querySelector('.nav'),
+  menu_item = document.querySelectorAll('.menu__item'),
   menuclose = document.querySelector('.menu__close');
      
 hamburger.addEventListener('click', () => {
   menu.classList.add('active');
-})
+});
+
+menu_item.forEach((e) => {
+  e.addEventListener('click', () => {
+        menu.classList.remove('active');
+        hamburger.classList.remove('active');      
+  })
+});
 
 menuclose.addEventListener('click', () => {
   menu.classList.remove('active');
-})
+});
